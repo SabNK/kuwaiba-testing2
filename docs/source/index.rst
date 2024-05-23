@@ -1,10 +1,10 @@
-Welcome to Lumache's documentation!
+Welcome to Kuwaiba's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Kuwaiba** is an open-source Java framework for Inventory Application with primarily focus at Telecom.
+Kuwaiba addressed to the middle level companies with mature processes and automation desire. Being developed 
+with practice in mind, Kuwaiba delivers unique flexibility that make it not *yet another inventory* but act as a framework to be suited to the customer needs.
+It offers a *simple* and *intuitive* API.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -20,3 +20,4 @@ Contents
 
    usage
    api
+   
