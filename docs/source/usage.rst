@@ -6,29 +6,18 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To try Kuwaiba, first install it to local machine using docker:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   docker container run -dp 8080-8081:8080-8081 --name kuwaiba-server neotropic/kuwaiba:v2.1-nightly
 
-Creating recipes
-----------------
+Starting 
+--------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+From your browser access ` http://localhost:8080/kuwaiba` and login using `admin` and password `kuwaiba`
 
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+To add a new building use `Navigation` knob at the top menu and choose `Navigation` text button.
+In the new window simply choose `Go to Root`, then choose a continent / country / city and from the kebab menu to the right of city info choose `add New Object`.
+Select a class `building` and print the name. That's it. Your building you will find in the city.
 
