@@ -1,7 +1,7 @@
 API
 ===
 
-new elegant api
+New elegant api
 
 .. autosummary::
    :toctree: generated
