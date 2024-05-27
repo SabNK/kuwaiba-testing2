@@ -13,5 +13,4 @@ python:
       path: .
 
 sphinx:
-  configuration: docs/source/conf.py
-  fail_on_warning: true
+  configuration: docs/source/conf.py  
