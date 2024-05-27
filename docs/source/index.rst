@@ -9,11 +9,13 @@ It offers a *simple* and *intuitive* API. Open-source community will help you to
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
+popo
+
 Let's start your kuwaiba journey...
 
 .. note::
 
-   This project is under active development.
+   This project is under active development. Not yet started
 
 Contents
 --------
