@@ -22,6 +22,10 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   start (onboarding)
+   concepts (business knowledge)
+   admin (installation, backup, logging, support)
+   user
+   models
+   tutorials
    
