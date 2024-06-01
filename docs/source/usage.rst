@@ -15,9 +15,9 @@ To try Kuwaiba, first install it to local machine using docker:
 Starting 
 --------
 
-From your browser access ` http://localhost:8080/kuwaiba` and login using `admin` and password `kuwaiba`
+From your browser access `<http://localhost:8080/kuwaiba>`_ and login using ``admin`` and password ``kuwaiba``
 
 To add a new building use `Navigation` knob at the top menu and choose `Navigation` text button.
-In the new window simply choose `Go to Root`, then choose a continent / country / city and from the kebab menu to the right of city info choose `add New Object`.
-Select a class `building` and print the name. That's it. Your building you will find in the city.
-
+In the new window simply choose `Go to Root`, then choose a continent / country / city and from the kebab menu 
+to the right of city info choose `add New Object`.
+Select a class `building` and print the name. That's it. You can find the new building in the city.
