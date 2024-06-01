@@ -9,23 +9,20 @@ It offers a *simple* and *intuitive* API. `Open-source community <https://source
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-start (onboarding)
-concepts (business knowledge)
-admin (installation, backup, logging, support)
-user
-models
-tutorials
-
 Let's start your kuwaiba journey...
 
 .. note::
 
-   This project is under active development. Not yet started
+   This project is under active development.
 
 Contents
 --------
 
 .. toctree::
-
+   :maxdepth: 2
+   
+   start/onboarding
+   
+   start/community
    api
    usage
