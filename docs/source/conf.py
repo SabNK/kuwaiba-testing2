@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'Kuwaiba'
-copyright = '2024, SabNK'
-author = 'SabNK'
+copyright = '2010-2024, Neotropic SAS'
+author = 'kuwaiba community'
 
 release = '0.1'
 version = '0.1.0'
@@ -18,7 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
-    'myst_parser',
+    'myst_parser',    
 ]
 
 intersphinx_mapping = {
