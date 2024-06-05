@@ -30,7 +30,7 @@ Below is a process of installing RTL in **Windows**.
        :kbd:`\`` - ticks are typically below :kbd:`~` and to left from :kbd:`1` on the keyboard
 
     Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_, other packages, mentioned in 
-    ``./docs/requirements.txt``, and language server esBonio_ print the following command:
+    ``./docs/requirements.txt``, and language server esbonio_ print the following command:
 
     .. code-block:: console
 
@@ -38,7 +38,7 @@ Below is a process of installing RTL in **Windows**.
     
 .. caution:: 
    
-   For correct work RTL requires some additional dependencies -- ``esBonio`` and ``reStructuredText Syntax highlighting``, 
+   For correct work RTL requires some additional dependencies -- ``esbonio`` and ``reStructuredText Syntax highlighting``, 
    that will be prompted to you during installation of RTL, so be careful and agree to install them and later install esbonio server. 
 
 4. In VS Code extension market find reStructuredText_ and press ``install``. Follow prompts to install dependencies and run them. 
