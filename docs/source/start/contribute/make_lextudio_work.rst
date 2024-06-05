@@ -29,12 +29,12 @@ Below is a process of installing RTL in **Windows**.
     .. tip::
        :kbd:`\`` - ticks are typically below :kbd:`~` and to left from :kbd:`1` on the keyboard
 
-    Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_ and other packages, mentioned in 
-    ``./docs/requirements.txt`` print the following command:
+    Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_, other packages, mentioned in 
+    ``./docs/requirements.txt``, and language server esBonio_ print the following command:
 
     .. code-block:: console
 
-        pip install -r ./docs/requirements.txt
+        pip install -r ./docs/requirements.txt esbonio
     
 .. caution:: 
    
@@ -53,6 +53,7 @@ Now you can use preview button |preview_ico| in VS Code on ``.rst`` files.
 .. _blue-white: https://blog.readthedocs.com/new-theme-read-the-docs/
 .. _theme: https://sphinx-rtd-theme.readthedocs.io/en/stable/
 .. _sphinx-copybutton: https://sphinx-copybutton.readthedocs.io/en/latest/
+.. _esBonio: https://github.com/swyddfa/esbonio
 .. _reStructuredText: https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext
 .. |preview_ico| image:: /res/open-preview.svg
 
