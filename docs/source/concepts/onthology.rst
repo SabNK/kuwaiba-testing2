@@ -10,7 +10,7 @@ Acronyms
 
 **RTD** - ReadTheDocs - a platform for documentation
 
-**RTL** - reStructuredText by LeXtudio -- extension for VS Code to support work with RT
+**RTL** - reStructuredText by LeXtudio -- extension for VS Code to support work with RST
 
 
 .. _lightweight markup language: https://en.wikipedia.org/wiki/Lightweight_markup_language

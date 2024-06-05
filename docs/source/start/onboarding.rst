@@ -9,7 +9,7 @@ Kuwaiba is:
 
 * flexible
 * powerful
-    * sometimes **too powerful**
+   * sometimes **too powerful**
 * verbose 
 
 
