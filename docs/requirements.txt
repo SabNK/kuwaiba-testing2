@@ -2,3 +2,6 @@ sphinx==7.3.7
 sphinx-rtd-theme==2.0.0
 sphinx-copybutton==0.5.2
 myst-parser==3.0.1
+sphinx-simplepdf==1.6
+
+
