@@ -29,7 +29,7 @@ Below is a process of installing RTL in **Windows**.
     .. tip::
        :kbd:`\`` - ticks are typically below :kbd:`~` and to left from :kbd:`1` on the keyboard
 
-    Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_, other packages, mentioned in 
+    Then to install ``sphinx``,  blue-white_ :hoverxref:`RTD <rtd-reference-label>` theme_, sphinx-copybutton_, other packages, mentioned in 
     ``./docs/requirements.txt``, and language server esbonio_ print the following command:
 
     .. code-block:: console

@@ -18,7 +18,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
-    'myst_parser',    
+    'myst_parser',
+    'hoverxref.extension',
 ]
 
 intersphinx_mapping = {
