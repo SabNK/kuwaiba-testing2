@@ -13,7 +13,7 @@ Kuwaiba hosts its documentation on Read the Docs.
 Check out the :doc:`onboarding </start/onboarding>` section for further information, including
 :ref:`get in touch<let's try>`.
 
-Let's start your Kuwaiba journey...
+Let's start your enjoyable and fruitful Kuwaiba journey...
 
 .. note::
 
