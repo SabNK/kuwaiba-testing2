@@ -8,7 +8,7 @@ it act as a framework to be suited to the customer needs.
 It offers a *simple* and *intuitive* API.  `Open-source community <https://sourceforge.net/p/kuwaiba/discussion/>`_ 
 will help you to make first steps.
 
-Kuwaiba hosts its documentation on Read the Docs.
+Kuwaiba hosts its documentation on Read the Docs since 2024.
 
 Check out the :doc:`onboarding </start/onboarding>` section for further information, including
 :ref:`get in touch<let's try>`.
