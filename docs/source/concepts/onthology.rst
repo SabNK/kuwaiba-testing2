@@ -11,7 +11,7 @@ Acronyms
 .. _rtd-reference-label:
     
     **RTD** - ReadTheDocs - a platform for documentation
-    
+
 **RTL** - reStructuredText by LeXtudio -- extension for VS Code to support work with RST
 
 
