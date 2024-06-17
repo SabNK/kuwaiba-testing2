@@ -12,16 +12,17 @@ Below is a process of installing RTL in **Windows**.
 
     .. code-block:: console
 
-        python --version
+        py --version
 
     your version should be higher than ``3.8.0``. If Python is missed or the version is old you 
-    should get it from `official source`_. It is recommended to add Python to the path -- will be 
-    prompted during installation.
+    should get it from `official source`_. It is recommended to add ``python.exe`` to the path -- see
+    checkbox on the initial screen before installation. In the end it is recommended to disable path limit.
+    After installation is complete, reload VS Code to let the path to Python scripts updates.
 
 2. In VS Code press :kbd:`⌃ Control` + :kbd:`⇧ Shift` + :kbd:`X` to open extension marketplace, find 
    `Python by Microsoft`_ and install.
 
-    * In case of multiple Python installation choose the correct one by :kbd:`⌃ Control` + :kbd:`⇧ Shift` 
+    * In case of multiple Python installations choose the correct one by :kbd:`⌃ Control` + :kbd:`⇧ Shift` 
       + :kbd:`P` and command ``Python: Select Interpreter``
 
 3. In VS Code press  :kbd:`⌃ Control` + :kbd:`⇧ Shift` + :kbd:`\`` to start terminal
@@ -29,19 +30,21 @@ Below is a process of installing RTL in **Windows**.
     .. tip::
        :kbd:`\`` - ticks are typically below :kbd:`~` and to left from :kbd:`1` on the keyboard
 
-    Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_ and other packages, mentioned in 
-    ``./docs/requirements.txt`` print the following command:
+    Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_, other packages, mentioned in 
+    ``./docs/requirements.txt``, and language server esbonio_ print the following command:
 
     .. code-block:: console
 
-        pip install -r ./docs/requirements.txt
+        pip install -r ./docs/requirements.txt esbonio
     
 .. caution:: 
    
-   For correct work RTL requires some additional dependencies -- ``esBonio`` and ``reStructuredText Syntax highlighting``, 
-   that will be prompted to you during installation of RTL, so be careful and agree to install them and later install esbonio server. 
+   For correct work RTL requires some additional dependencies -- ``esbonio`` and ``reStructuredText Syntax highlighting``, 
+   that will be prompted to you during installation of RTL, so be careful and agree to install them and later 
+   install esbonio server. 
 
-4. In VS Code extension market find reStructuredText_ and press ``install``. Follow prompts to install dependencies and run them. 
+4. In VS Code extension market find reStructuredText_ and press ``install``. Follow prompts to install dependencies 
+   and run them. 
 
 Congrat!
 --------
@@ -53,6 +56,7 @@ Now you can use preview button |preview_ico| in VS Code on ``.rst`` files.
 .. _blue-white: https://blog.readthedocs.com/new-theme-read-the-docs/
 .. _theme: https://sphinx-rtd-theme.readthedocs.io/en/stable/
 .. _sphinx-copybutton: https://sphinx-copybutton.readthedocs.io/en/latest/
+.. _esBonio: https://github.com/swyddfa/esbonio
 .. _reStructuredText: https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext
 .. |preview_ico| image:: /res/open-preview.svg
 
