@@ -1,0 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2024, Neotropic SAS
+# This file is distributed under the same license as the Kuwaiba package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuwaiba 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../concepts/telecom.rst:2 96f00274aca4462ebc8f8d932f239ea5
+msgid "Telecom"
+msgstr ""
+
+#: ../../concepts/telecom.rst:5 eba1fb0c586a4866ab0adfe90d5603aa
+msgid "OSI model"
+msgstr ""
+
+#: ../../concepts/telecom.rst:8 76aab4bdfaee46e6ac9253ea070dfb14
+msgid "eTOM"
+msgstr ""
+

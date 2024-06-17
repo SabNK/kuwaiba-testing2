@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2024, Neotropic SAS
+# This file is distributed under the same license as the Kuwaiba package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuwaiba 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../index.rst:22
+msgid "Start"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Concepts"
+msgstr ""
+
+#: ../../index.rst:39
+msgid "Admin"
+msgstr ""
+
+#: ../../index.rst:49
+msgid "User"
+msgstr ""
+
+#: ../../index.rst:56
+msgid "Models"
+msgstr ""
+
+#: ../../index.rst:63
+msgid "Tutorials"
+msgstr ""
+
+#: ../../index.rst:2 950db11eccd949b8b2d019f7db0ef47f
+msgid "Welcome to Kuwaiba's documentation!"
+msgstr ""
+
+#: ../../index.rst:4 555d23901beb442f84e53af3588819ec
+msgid ""
+"**Kuwaiba** is an open-source Java framework for Inventory Application "
+"with primarily focus at Telecom. Kuwaiba addressed to the middle level "
+"companies with mature processes and automation desire. Being developed "
+"with practice in mind, Kuwaiba delivers unique flexibility that makes it "
+"not *yet another inventory*, but let it act as a framework to be suited "
+"to the customer needs. It offers a *simple* and *intuitive* API.  `Open-"
+"source community <https://sourceforge.net/p/kuwaiba/discussion/>`_ will "
+"help you to make first steps."
+msgstr ""
+
+#: ../../index.rst:11 f1cefbd5b4a54d46904a7509880ff4ca
+msgid "Kuwaiba hosts its documentation on Read the Docs."
+msgstr ""
+
+#: ../../index.rst:13 d276e34e94e747f2b2634ab41c4bf9f5
+msgid ""
+"Check out the :doc:`onboarding </start/onboarding>` section for further "
+"information, including :ref:`get in touch<let's try>`."
+msgstr ""
+
+#: ../../index.rst:16 0d0a003fc12442aea16b2575e83a48e4
+msgid "Let's start your Kuwaiba journey..."
+msgstr ""
+
+#: ../../index.rst:20 6bdf35d82b1345d889fafb734913e025
+msgid "This project is under active development."
+msgstr ""
+

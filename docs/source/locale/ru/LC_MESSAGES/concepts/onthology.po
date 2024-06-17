@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2024, Neotropic SAS
+# This file is distributed under the same license as the Kuwaiba package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuwaiba 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../concepts/onthology.rst:2 e223ff56cc4e472a8e5dc66304d42958
+msgid "Onthology"
+msgstr ""
+
+#: ../../concepts/onthology.rst:4 ef1d80046b03469d9e3c324bd333cf4f
+msgid ""
+"An important part of knowledge base and domain specific language is "
+"onthological approach to glossary and etc."
+msgstr ""
+
+#: ../../concepts/onthology.rst:7 5ab68c95d3084e84948227801ae70477
+msgid "Acronyms"
+msgstr ""
+
+#: ../../concepts/onthology.rst:9 d88cbdae6ec74776898cdc2eb1b3258f
+msgid ""
+"**RST** - reStructuredText - a `lightweight markup language`_ used for "
+"technical documentation"
+msgstr ""
+
+#: ../../concepts/onthology.rst:13 552d965ab48f429c8c3a0f6e93c9843f
+msgid "**RTD** - ReadTheDocs - a platform for documentation"
+msgstr ""
+
+#: ../../concepts/onthology.rst:16 8c5e535b08c34b0bafba65b53d8d1ebc
+msgid ""
+"**RTL** - reStructuredText by LeXtudio -- extension for VS Code to "
+"support work with RST"
+msgstr ""
+

@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2024, Neotropic SAS
+# This file is distributed under the same license as the Kuwaiba package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuwaiba 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../start/onboarding.rst:2 0156fd7d90674841935460a85ff2a344
+msgid "Onboarding"
+msgstr ""
+
+#: ../../start/onboarding.rst:5 f392f37c7594483bb0204e6107627674
+msgid "Overview"
+msgstr ""
+
+#: ../../start/onboarding.rst:6 c326cfd01ad246e888b8222c728d5476
+msgid "some overview..."
+msgstr ""
+
+#: ../../start/onboarding.rst:8 4e351cf6dc2e446f97d0b312b7cf2c7b
+msgid "Kuwaiba is:"
+msgstr ""
+
+#: ../../start/onboarding.rst:10 e499634e0089471386730f1e8e1c2d73
+msgid "flexible"
+msgstr ""
+
+#: ../../start/onboarding.rst:11 a21b5d236d6746b1befb02908c307db1
+msgid "powerful"
+msgstr ""
+
+#: ../../start/onboarding.rst:12 c0869f33593f4b26a0992e7f60fb3aba
+msgid "sometimes **too powerful**"
+msgstr ""
+
+#: ../../start/onboarding.rst:13 60473011d2f241239055733512d1f20d
+msgid "verbose"
+msgstr ""
+
+#: ../../start/onboarding.rst:19 72697f5a06c541fd917dcdb5449b5446
+msgid "Let's try"
+msgstr ""
+
+#: ../../start/onboarding.rst:22 c99596eb55384a4aa21789061c9a2d3b
+msgid "online"
+msgstr ""
+
+#: ../../start/onboarding.rst:23 4e6fa907cedd40daa24d83ba8b133588
+msgid "to be developed"
+msgstr ""
+
+#: ../../start/onboarding.rst:26 33bb53a6171f41eb861c805f4809bb3d
+msgid "local"
+msgstr ""
+
+#: ../../start/onboarding.rst:27 75526bccd8fd4c26808cdc627614f4ca
+msgid ""
+"The easiest way to try *Kuwaiba* -- use it containerized_, first install "
+"it to local machine using docker:"
+msgstr ""
+
+#: ../../start/onboarding.rst:35 c88f801034a3437e9f15225f55446d20
+msgid ""
+"Then from your browser access http://localhost:8080/kuwaiba and login "
+"using ``admin`` and password ``kuwaiba``"
+msgstr ""
+
+#: ../../start/onboarding.rst:42 15adb729f26a4e519fa0b0f347bf9a74
+msgid ""
+"The main difference between *online* and *local* trial -- for security "
+"reasons *online* Kuwaiba sandbox keeps the scripts unable to crete or "
+"edit: reports, tasks, validators. But you can run existing scripts "
+"easily."
+msgstr ""
+
+#: ../../start/onboarding.rst:47 64650d0dcf3f4aec81dda3211a3eb44f
+msgid "First steps"
+msgstr ""
+
+#: ../../start/onboarding.rst:48 89a1171930714a92ba277b4d53572733
+msgid ""
+"To add a new building use *Navigation* knob at the top menu and choose "
+"*Navigation* text button. In the new window simply choose *Go to Root*, "
+"then choose a continent / country / city and from the kebab menu to the "
+"right of city info choose *add New Object*. Select a class *building* and"
+" print the name. That's it. You can find the new building in the city."
+msgstr ""
+
+#: ../../start/onboarding.rst:55 ba2af7dea72e4d57a79223e9322f71d1
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../start/onboarding.rst:56 8e71e4a1fcf648e5a2c0455646c08ec8
+msgid "under development"
+msgstr ""
+

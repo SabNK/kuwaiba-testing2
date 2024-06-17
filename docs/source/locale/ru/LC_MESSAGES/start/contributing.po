@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2024, Neotropic SAS
+# This file is distributed under the same license as the Kuwaiba package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuwaiba 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../start/contributing.rst:2 295a58d3a188460c950ddb1a7c4321ea
+msgid "Contributing"
+msgstr ""
+
+#: ../../start/contributing.rst:5 6f279dcd28e84c80a5d88685ed9df00e
+msgid "Documentation"
+msgstr ""
+
+#: ../../start/contributing.rst:7 b08a0353c49e4de296a556e98d512712
+msgid ""
+"We welcome any your support in documenting your Kuwaiba journey in order "
+"to share with other users and commit to retain the easy to use and "
+"helpful support to start documenting. Don't hesitate to start writing "
+"even if the words github, restructured text and pull request are "
+":doc:`new for you</start/contribute/absolute_beginner>`. Nevertheless the"
+" actual working surrounding is quite comprehensive, we will try to make "
+"any small step easier and let you concentrate on the issue."
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:2 87c366f9203447f9b0d1735b17c7b0c1
+msgid "Contributing to Documenting Kuwaiba from scratch"
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:4 b4f14e2cff1c46dc868dea34fd0e274a
+msgid ""
+"Kuwaiba documentation is build on ReadTheDocs_ (RTD) platform. That means"
+" automatic documentation deployment with the Sphinx_ engine. To work with"
+" that platform you need git_ installed, `github account`_ and `text "
+"editor`_, working with git. We prefer `VS Code`_, so the following story "
+"will be in relation with this editor, but you can work with the one of "
+"your choice."
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:15 d4b80bdd0aef4c47b5304ef4e93e7f1b
+msgid "If you are new with VS Code, see official videos, covering our needs:"
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:13 40ea37eb73dc44ee9797ddf776b143c6
+msgid "Learn Visual Studio Code in 7min (`Official Beginner Tutorial`_)"
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:14 ddc3bf2a573d4a6cbce66dd6c88901f6
+msgid "Git: `Commits in Visual Studio Code`_"
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:15 aa0ac4300c8a416786f808052971113b
+msgid "5 Tips for `Note Taking`_ with VS Code & Git"
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:16 dc46c319104941df9082f052d7b7e1d6
+msgid "`Pull Requests`_ in VS Code"
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:18 20186d4699ff4ea9bb226aa5d41905c6
+msgid ""
+"As far as :hoverxref:`RTD <my-rtd-label>` is using reStructuredText_ "
+"(RST) it is considered useful to install an extension `reStructuredText "
+"by LeXtudio`_ (RTL). Unfortunately the extension is now considered for "
+"experienced users so we give you :doc:`some "
+"breadcrumbs</start/contribute/make_lextudio_work>`."
+msgstr ""
+
+#: ../../start/contribute/documentation.rst:22 6a76e2547702466689a1c296fd838baa
+msgid ""
+"When you feel comfortable enough with VS Code, you might find useful the "
+"official `Sphinx RST Tutorial`_ or try this `nice video course`_ by "
+"chance available on youtube."
+msgstr ""
+

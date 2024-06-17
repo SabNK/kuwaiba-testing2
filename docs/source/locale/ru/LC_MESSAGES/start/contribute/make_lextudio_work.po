@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2024, Neotropic SAS
+# This file is distributed under the same license as the Kuwaiba package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuwaiba 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: ../../start/contribute/make_lextudio_work.rst:2
+#: 6c25cdcb7ebd4ae1850da50189b8d1b8
+msgid "Make reStructuredText by LeXtudio (RTL) working"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:4
+#: 9fb84c70aaa447eaac41d595490c7a8b
+msgid "Below is a process of installing RTL in **Windows**."
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:9
+#: 2667a80d99a04656aceb3958e9308781
+msgid "Prerequisites:"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:7
+#: f444efb72775433ea8b085fa4c498f8e
+msgid "VS Code installed"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:8
+#: 57e1742db2c64c5bb01a16247c021178
+msgid "Docs files from docs repo on Github were pulled to the working directory"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:9
+#: 5ae49f6e16bc4b0cba8c51196007a752
+msgid ""
+"You are familiar with recommended :ref:`official videos VS Code <official"
+" videos vs code>`"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:11
+#: f97c39a454a5418eaea4b93843348a78
+msgid ""
+"Check that Python is installed on your machine. :kbd:`⊞ Win` + :kbd:`cmd`"
+" and then print"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:17
+#: 7c4985751c4b4102b13be0a636eed50b
+msgid ""
+"your version should be higher than ``3.8.0``. If Python is missed or the "
+"version is old you should get it from `official source`_. It is "
+"recommended to add ``python.exe`` to the path -- see checkbox on the "
+"initial screen before installation. In the end it is recommended to "
+"disable path limit. After installation is complete, reload VS Code to let"
+" the path to Python scripts updates."
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:22
+#: 897ad4d8edd941d18ecadbde5d93b904
+msgid ""
+"In VS Code press :kbd:`⌃ Control` + :kbd:`⇧ Shift` + :kbd:`X` to open "
+"extension marketplace, find `Python by Microsoft`_ and install."
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:25
+#: 76501c312fec4f818375c732acb1076b
+msgid ""
+"In case of multiple Python installations choose the correct one by "
+":kbd:`⌃ Control` + :kbd:`⇧ Shift` + :kbd:`P` and command ``Python: Select"
+" Interpreter``"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:28
+#: a3b7e322ce854d109cb639d9b7f096ff
+msgid ""
+"In VS Code press  :kbd:`⌃ Control` + :kbd:`⇧ Shift` + :kbd:`\\`` to start"
+" terminal"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:31
+#: 8eb0c7956287447fae32ba8a1a4c0500
+msgid ""
+":kbd:`\\`` - ticks are typically below :kbd:`~` and to left from :kbd:`1`"
+" on the keyboard"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:33
+#: 4485636f60354ae1b63ad95622b38a26
+msgid ""
+"Then to install ``sphinx``,  blue-white_ RTD theme_, sphinx-copybutton_, "
+"other packages, mentioned in ``./docs/requirements.txt``, and language "
+"server esbonio_ print the following command:"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:42
+#: a79bfba5473e4cbaa715fde35418b317
+msgid ""
+"For correct work RTL requires some additional dependencies -- ``esBonio``"
+" and ``reStructuredText Syntax highlighting``, that will be prompted to "
+"you during installation of RTL, so be careful and agree to install them "
+"and later install esbonio server."
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:45
+#: 4fd9db11e3a34194a4e229293ea4139f
+msgid ""
+"In VS Code extension market find reStructuredText_ and press ``install``."
+" Follow prompts to install dependencies and run them."
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:49
+#: 21d2b7f14ab94d29a7ea5438458cc0b5
+msgid "Congrat!"
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:50
+#: 1809ac11fbc544ed948cba8c4a7dd0fd
+msgid "Now you can use preview button |preview_ico| in VS Code on ``.rst`` files."
+msgstr ""
+
+#: ../../start/contribute/make_lextudio_work.rst:60
+#: 4f8fde2d0e324057847b2426b81ad56f 7170df1f0be943f38b18d6437f05efa2
+msgid "preview_ico"
+msgstr ""
+

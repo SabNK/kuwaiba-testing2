@@ -1,7 +1,40 @@
+# generic syntax highlighter suitable for use in code
+pygments
+
+# base
 sphinx==7.3.7
 sphinx-rtd-theme==2.0.0
+
+# Adds a 'copy' button to the right of codeblocks. and prompt to show commands outputs 
+# It allows you to show a prompt on each line but making it unselectable,
 sphinx-copybutton==0.5.2
+sphinx-prompt
+
+# Code tabs extension to display codeblocks in different languages as tabs.
+sphinx-tabs
+
+# Adds Open Graph tags in the HTML `<head>` tag.
+#sphinxext-opengraph
+
+# `.. video::` directive support to embed videos in documentation pages.
+sphinxcontrib-video
+
+# Markdown
 myst-parser==3.0.1
+
+# pdf builder
 sphinx-simplepdf==1.6
+
+# hover for onthology
 sphinx-hoverxref
 
+# i18n
+sphinx-intl
+
+# beautiful
+sphinx-design
+
+# emoji
+sphinxemoji
+
+sphinx-notfound-page
