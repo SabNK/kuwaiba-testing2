@@ -35,7 +35,7 @@ Below is a process of installing RTL in **Windows**.
 
     .. code-block:: console
 
-        pip install -r ./docs/requirements.txt esbonio
+        pip install -r requirements.txt esbonio
     
 .. caution:: 
    

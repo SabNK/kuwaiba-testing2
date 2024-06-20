@@ -2,8 +2,8 @@ Contributing to Documenting Kuwaiba from scratch
 ------------------------------------------------
 
 Kuwaiba documentation is build on ReadTheDocs_ (RTD) platform. That means automatic documentation
-deployment with the Sphinx_ engine. To work with that platform you need git_ installed, `github account`_ and 
-`text editor`_, working with git. We prefer `VS Code`_, so the following story will be 
+deployment with the Sphinx_ engine. To work with that platform you need git_ installed, `github account <github_>`_ and 
+`text editor <editor_>`_, working with git. We prefer `VS Code`_, so the following story will be 
 in relation with this editor, but you can work with the one of your choice.
 
 .. _official videos VS Code:
@@ -26,8 +26,8 @@ try this `nice video course`_ by chance available on youtube.
 .. _ReadTheDocs: https://about.readthedocs.com/?ref=readthedocs.org
 .. _Sphinx: https://www.sphinx-doc.org/en/master/
 .. _git: https://git-scm.com/downloads
-.. _github account: https://github.com/signup
-.. _text editor: https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git?platform=windows
+.. _github: https://github.com/signup
+.. _editor: https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git?platform=windows
 .. _VS Code: https://code.visualstudio.com/
 .. _Official Beginner Tutorial: https://youtu.be/B-s71n0dHUk
 .. _Commits in Visual Studio Code: https://youtu.be/E6ADS2k8oNQ

@@ -19,7 +19,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_copybutton',
     'myst_parser',
-    'hoverxref.extension',    
+    'hoverxref.extension',
+    'sphinxcontrib.kroki',    
 ]
 
 intersphinx_mapping = {
