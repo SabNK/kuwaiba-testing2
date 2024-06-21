@@ -4,6 +4,9 @@ import sys
 import os
 import sphinx
 
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
+
 # -- Project information
 
 project = 'Kuwaiba'
@@ -59,6 +62,12 @@ figure_language_filename = "{root}.{language}{ext}"
 
 sphinx_original_get_image_filename_for_language = sphinx.util.i18n.get_image_filename_for_language
 
+res_folder: str = ""
+if on_rtd: 
+    res_folder = "../../res/"
+else:
+    res_folder = "../res/"    
+
 
 def kuwaiba_get_image_filename_for_language(filename, env):
     """
@@ -72,7 +81,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     print(f"kuwaiba cwd : {cwd} +++++++++++ /n")
     initial_path = sphinx_original_get_image_filename_for_language(filename, env)
     print(f"kuwaiba initial: {initial_path} ---------- /n")
-    path = os.path.abspath(os.path.join("../res/", os.path.relpath(initial_path, cwd)))    
+    path = os.path.abspath(os.path.join(res_folder, os.path.relpath(initial_path, cwd)))    
     print(f"kuwaiba path: {path} =========== /n")
     return path
 
