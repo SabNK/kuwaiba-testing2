@@ -68,9 +68,9 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     The returned string should also be absolute so that `os.path.exists` can properly
     resolve it when trying to concatenate with the original doc folder.
     """
-    
+    cwd = os.getcwd()
     initial_path = sphinx_original_get_image_filename_for_language(filename, env)
-    path = os.path.abspath(os.path.join("../res/", os.path.relpath(initial_path, os.getcwd())))    
+    path = os.path.abspath(os.path.join("../res/", os.path.relpath(initial_path, cwd)))    
     print(f"kuwaiba : {path} =========== /n")
     return path
 
