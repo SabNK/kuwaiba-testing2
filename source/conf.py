@@ -70,7 +70,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     """
     
     initial_path = sphinx_original_get_image_filename_for_language(filename, env)
-    path = os.path.abspath(os.path.join("../../res/", os.path.relpath(initial_path, os.getcwd())))    
+    path = os.path.abspath(os.path.join("../res/", os.path.relpath(initial_path, os.getcwd())))    
     return path
 
 sphinx.util.i18n.get_image_filename_for_language = kuwaiba_get_image_filename_for_language
