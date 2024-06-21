@@ -47,7 +47,7 @@ gettext_compact = 'docs'
 locale_dirs = ['../../locales']
 
 # Taken from Godot!
-# We want to host the localized images in godot-docs-l10n, but Sphinx does not provide
+# We want to host the localized images in kuwaiba_i18n, but Sphinx does not provide
 # the necessary feature to do so. `figure_language_filename` has `{root}` and `{path}`,
 # but they resolve to (host) absolute paths, so we can't use them as is to access "../".
 # However, Python is glorious and lets us redefine Sphinx's internal method that handles
@@ -56,8 +56,6 @@ locale_dirs = ['../../locales']
 # Note: Sphinx's handling of `figure_language_filename` may change in the future, monitor
 # https://github.com/sphinx-doc/sphinx/issues/7768 to see what would be relevant for us.
 figure_language_filename = "{root}.{language}{ext}"
-
-cwd = os.getcwd()
 
 sphinx_original_get_image_filename_for_language = sphinx.util.i18n.get_image_filename_for_language
 
@@ -70,10 +68,9 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     The returned string should also be absolute so that `os.path.exists` can properly
     resolve it when trying to concatenate with the original doc folder.
     """
-    path = sphinx_original_get_image_filename_for_language(filename, env)
-    print(f"kuwaiba {path} ===============\n")
-    path = os.path.abspath(os.path.join("../../res/", os.path.relpath(path, cwd)))
-    print(f"kuwaiba {path} ++++++++++++++++\n")
+    
+    initial_path = sphinx_original_get_image_filename_for_language(filename, env)
+    path = os.path.abspath(os.path.join("../../res/", os.path.relpath(initial_path, os.getcwd())))    
     return path
 
 sphinx.util.i18n.get_image_filename_for_language = kuwaiba_get_image_filename_for_language
