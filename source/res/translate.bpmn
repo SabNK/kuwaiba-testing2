@@ -2,7 +2,7 @@
 <bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_11t89fe" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="17.7.1">
   <bpmn:collaboration id="Collaboration_1tko793">
     <bpmn:participant id="Participant_0m0y3rx" name="Interpreter" processRef="Process_1nuxebf" />
-    <bpmn:participant id="Participant_0rcx7j2" name="Supervisor" processRef="Process_0mzgksv" />
+    <bpmn:participant id="Participant_0rcx7j2" name="Editor" processRef="Process_0mzgksv" />
     <bpmn:messageFlow id="Flow_15q4s42" name="PR declined Comments" sourceRef="Event_1rjia2f" targetRef="Event_0sb9wl7" />
     <bpmn:messageFlow id="Flow_0yqyjhs" sourceRef="Activity_1fb436a" targetRef="Event_1u0pym9" />
   </bpmn:collaboration>
@@ -103,10 +103,6 @@
         <di:waypoint x="248" y="170" />
         <di:waypoint x="290" y="170" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0jyhanv_di" bpmnElement="Flow_0jyhanv">
-        <di:waypoint x="390" y="170" />
-        <di:waypoint x="430" y="170" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0fsfss5_di" bpmnElement="Flow_0fsfss5">
         <di:waypoint x="828" y="170" />
         <di:waypoint x="875" y="170" />
@@ -118,12 +114,6 @@
           <dc:Bounds x="939" y="152" width="90" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1jcu464_di" bpmnElement="Flow_1jcu464">
-        <di:waypoint x="1090" y="130" />
-        <di:waypoint x="1090" y="110" />
-        <di:waypoint x="480" y="110" />
-        <di:waypoint x="480" y="130" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0ktvr34_di" bpmnElement="Flow_0ktvr34">
         <di:waypoint x="900" y="195" />
         <di:waypoint x="900" y="260" />
@@ -131,6 +121,16 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="935" y="243" width="89" height="14" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jcu464_di" bpmnElement="Flow_1jcu464">
+        <di:waypoint x="1090" y="130" />
+        <di:waypoint x="1090" y="110" />
+        <di:waypoint x="480" y="110" />
+        <di:waypoint x="480" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0jyhanv_di" bpmnElement="Flow_0jyhanv">
+        <di:waypoint x="390" y="170" />
+        <di:waypoint x="430" y="170" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Participant_0rcx7j2_di" bpmnElement="Participant_0rcx7j2" isHorizontal="true">
         <dc:Bounds x="156" y="340" width="1054" height="300" />
