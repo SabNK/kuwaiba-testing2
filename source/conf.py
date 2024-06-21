@@ -71,7 +71,9 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     resolve it when trying to concatenate with the original doc folder.
     """
     path = sphinx_original_get_image_filename_for_language(filename, env)
+    print(f"kuwaiba {path} ===============\n")
     path = os.path.abspath(os.path.join("../../res/", os.path.relpath(path, cwd)))
+    print(f"kuwaiba {path} ++++++++++++++++\n")
     return path
 
 sphinx.util.i18n.get_image_filename_for_language = kuwaiba_get_image_filename_for_language
