@@ -8,6 +8,7 @@ import sphinx
 on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
 print(f"On RTD: {on_rtd}")
 # -- Project information
+print(f"$READTHEDOCS_VIRTUALENV_PATH : {os.environ.get("READTHEDOCS_VIRTUALENV_PATH", None)}")
 
 project = 'Kuwaiba'
 copyright = '2010-2024, Neotropic SAS'
