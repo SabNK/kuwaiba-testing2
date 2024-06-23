@@ -1,25 +1,21 @@
 # Configuration file for the Sphinx documentation builder.
 
-import sys
 import os
 import sphinx
-from sphinx.errors import SphinxError
-from sphinx.util.osutil import SEP
+
 
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
 
-# get base project path
+# get root project path - .
 
 cwd = os.getcwd()
-print(f"Current working dir: {cwd} /n")
 root = ""
 if on_rtd:
     rtd_output = os.environ.get("READTHEDOCS_OUTPUT", None)
     root = os.path.commonprefix([cwd, rtd_output])
 else:
     root, _ = os.path.split(os.path.split(cwd)[0])
-print(f"Project root: {root} /n")
 
 # -- Project information
 project = 'Kuwaiba'
@@ -77,60 +73,18 @@ sphinx_original_get_image_filename_for_language = sphinx.util.i18n.get_image_fil
 
 def kuwaiba_get_image_filename_for_language(filename, env):
     """
-    Hack the absolute path returned by Sphinx based on `figure_language_filename`
-    to insert our `../images` relative path to godot-docs-l10n's images folder,
-    which mirrors the folder structure of the docs repository.
-    The returned string should also be absolute so that `os.path.exists` can properly
-    resolve it when trying to concatenate with the original doc folder.
+    Hack the relative path returned by Sphinx based on `figure_language_filename`
+    to insert our `/../../res/<path>` instead of Sphinx `/res/<path>` path to 
+    kuwaiba_i18's res folder, which mirrors the folder structure of the kuwaiba_docs repository.
     """
-    print(f"filename: {filename} /n")
-    print(f"docname: {env.docname} /n")
-    r, e = os.path.splitext(filename)
-    print(f"root, ext : {r}, {e} /n")
-    dirname1 = os.path.dirname(r)
-    docpath1 = os.path.dirname(env.docname)
-    basename1 =os.path.basename(r)
-    print(f"dirname : {dirname1}/n")
-    print(f"docpath : {docpath1}/n")
-    print(f"basename : {basename1}/n")
     path = sphinx_original_get_image_filename_for_language(filename, env)    
-    print(f"kuwaiba initial: {path} ---------- /n")
     sep = path[0]
     if os.name == 'nt':
         sep = '\\'
     if "res" in path:        
         abs_path = os.path.abspath(os.path.join(root, path[1:]))
-        path = sep + os.path.relpath(abs_path, cwd)
-        
-    print(f"kuwaiba path: {path} =========== /n")
+        path = sep + os.path.relpath(abs_path, cwd)    
     return path
-    """
-    print(f"filename: {filename} \n")
-    root, ext = os.path.splitext(filename)
-    if "res" in root:
-        root = "/../.." + root 
-    print(f"root, ext : {root}, {ext} \n")    
-    dirname = os.path.dirname(root)
-    print(f"dirname : {dirname} \n")
-    print(f"docname: {env.docname} \n")
-    docpath = os.path.dirname(env.docname)
-    print(f"docpath : {docpath} \n")
-    basename1 =os.path.basename(root)
-    print(f"basename : {basename1} \n")
-    try:
-        return env.config.figure_language_filename.format(
-            root=root,
-            ext=ext,
-            path=dirname and dirname + SEP,
-            basename=os.path.basename(root),
-            docpath=docpath and docpath + SEP,
-            language=env.config.language,
-        )
-    except KeyError as exc:
-        msg = f'Invalid figure_language_filename: {exc!r}'
-        print("ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        raise SphinxError(msg) from exc
-    """
-
+    
 sphinx.util.i18n.get_image_filename_for_language = kuwaiba_get_image_filename_for_language
 
