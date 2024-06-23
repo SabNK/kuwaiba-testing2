@@ -85,7 +85,8 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     path: str = ""
     if "res" in initial_path:
         path = os.path.abspath(os.path.join(root, initial_path))
-           
+    if "build" in initial_path:
+        path = initial_path       
     print(f"kuwaiba initial: {initial_path} ---------- /n")
     print(f"kuwaiba path: {path} =========== /n")
     return path
