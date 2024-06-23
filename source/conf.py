@@ -3,6 +3,8 @@
 import sys
 import os
 import sphinx
+from sphinx.errors import SphinxError
+from sphinx.util.osutil import SEP
 
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
@@ -80,7 +82,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     which mirrors the folder structure of the docs repository.
     The returned string should also be absolute so that `os.path.exists` can properly
     resolve it when trying to concatenate with the original doc folder.
-    """
+    
     print(f"filename: {filename} /n")
     print(f"docname: {env.docname} /n")
     r, e = os.path.splitext(filename)
@@ -99,6 +101,26 @@ def kuwaiba_get_image_filename_for_language(filename, env):
         
     print(f"kuwaiba path: {path} =========== /n")
     return path
+    """
+    root, ext = os.path.splitext(filename)
+    if "res" in root:
+        root = "../.." + root 
+    dirname = os.path.dirname(root)
+    docpath = os.path.dirname(env.docname)
+    
+    try:
+        return env.config.figure_language_filename.format(
+            root=root,
+            ext=ext,
+            path=dirname and dirname + SEP,
+            basename=os.path.basename(root),
+            docpath=docpath and docpath + SEP,
+            language=env.config.language,
+        )
+    except KeyError as exc:
+        msg = f'Invalid figure_language_filename: {exc!r}'
+        raise SphinxError(msg) from exc
+
 
 sphinx.util.i18n.get_image_filename_for_language = kuwaiba_get_image_filename_for_language
 
