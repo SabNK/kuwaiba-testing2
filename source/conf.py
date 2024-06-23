@@ -81,13 +81,10 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     resolve it when trying to concatenate with the original doc folder.
     """
         
-    initial_path = sphinx_original_get_image_filename_for_language(filename, env)[1:]
-    path: str = ""
+    path = sphinx_original_get_image_filename_for_language(filename, env)    
+    print(f"kuwaiba initial: {path} ---------- /n")
     if "res" in initial_path:
-        path = os.path.abspath(os.path.join(root, initial_path))
-    if "build" in initial_path:
-        path = initial_path       
-    print(f"kuwaiba initial: {initial_path} ---------- /n")
+        path = os.path.abspath(os.path.join(root, path[1:]))              
     print(f"kuwaiba path: {path} =========== /n")
     return path
 
