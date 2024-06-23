@@ -96,7 +96,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     path = sphinx_original_get_image_filename_for_language(filename, env)    
     print(f"kuwaiba initial: {path} ---------- /n")
     if "res" in path:
-        sep, *path = path
+        sep, path = path[0], path[1:]
         abs_path = os.path.abspath(os.path.join(root, path))
         path = sep + os.path.relpath(abs_path, cwd)
         
