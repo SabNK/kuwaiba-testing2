@@ -35,7 +35,7 @@ docker:
 Then from your browser access http://localhost:8080/kuwaiba and login using ``admin`` and 
 password ``kuwaiba``
 
-.. image:: ../res/login_page.png
+.. image:: /res/login_page.png
 
 .. note::
 
