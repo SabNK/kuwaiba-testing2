@@ -10,6 +10,7 @@ on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
 # get base project path
 
 cwd = os.getcwd()
+print(f"Current working dir: {cwd} /n")
 root = ""
 if on_rtd:
     rtd_output = os.environ.get("READTHEDOCS_OUTPUT", None)
