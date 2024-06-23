@@ -15,7 +15,7 @@ if on_rtd:
     rtd_output = os.environ.get("READTHEDOCS_OUTPUT", None)
     root = os.path.commonprefix([cwd, rtd_output])
 else:
-    root, _ = os.path.split(os.path.split(cwd)[0])
+    root, _ = os.path.split(cwd)
 print(f"Project root: {root} /n")
 
 # -- Project information
