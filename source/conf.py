@@ -6,18 +6,17 @@ import sphinx
 
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
-print(f"On RTD: {on_rtd}")
 
 # get base project path
+
 cwd = os.getcwd()
-project_path = ""
+root = ""
 if on_rtd:
-    output = os.environ.get("READTHEDOCS_OUTPUT", None)
-    print(f"READTHEDOCS_OUTPUT : {output}")
-    virtenv_path = os.environ.get("READTHEDOCS_VIRTUALENV_PATH", None)
-    print(f"$READTHEDOCS_VIRTUALENV_PATH : {virtenv_path}")
-    project_path = os.path.commonprefix([cwd, virtenv_path])
-print(f"Project path: {project_path} /n")
+    rtd_output = os.environ.get("READTHEDOCS_OUTPUT", None)
+    root = os.path.commonprefix([cwd, rtd_output])
+else:
+    root, _ = os.path.split(os.path.split(cwd)[0])
+print(f"Project root: {root} /n")
 
 # -- Project information
 project = 'Kuwaiba'
@@ -90,11 +89,13 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     The returned string should also be absolute so that `os.path.exists` can properly
     resolve it when trying to concatenate with the original doc folder.
     """
-    
-    print(f"kuwaiba cwd : {cwd} +++++++++++ /n")
+        
     initial_path = sphinx_original_get_image_filename_for_language(filename, env)
+    path: str = ""
+    if "res" in initial_path:
+        path = os.path.abspath(os.path.join(root, initial_path))
+           
     print(f"kuwaiba initial: {initial_path} ---------- /n")
-    path = os.path.abspath(os.path.join(res_folder, os.path.relpath(initial_path, cwd)))    
     print(f"kuwaiba path: {path} =========== /n")
     return path
 
