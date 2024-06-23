@@ -72,15 +72,6 @@ figure_language_filename = "{root}.{language}{ext}"
 
 sphinx_original_get_image_filename_for_language = sphinx.util.i18n.get_image_filename_for_language
 
-res_folder: str = ""
-if on_rtd:     
-    res_folder = "../../res/"
-else:
-    res_folder = "../res/"    
-
-
-print(f"Res Folder: {res_folder}")
-
 def kuwaiba_get_image_filename_for_language(filename, env):
     """
     Hack the absolute path returned by Sphinx based on `figure_language_filename`
@@ -90,7 +81,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     resolve it when trying to concatenate with the original doc folder.
     """
         
-    initial_path = sphinx_original_get_image_filename_for_language(filename, env)
+    initial_path = sphinx_original_get_image_filename_for_language(filename, env)[1:]
     path: str = ""
     if "res" in initial_path:
         path = os.path.abspath(os.path.join(root, initial_path))
