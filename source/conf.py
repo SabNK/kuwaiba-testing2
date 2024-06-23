@@ -7,11 +7,19 @@ import sphinx
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd : bool = os.environ.get("READTHEDOCS", None) == "True"
 print(f"On RTD: {on_rtd}")
-# -- Project information
+
+# get base project path
+cwd = os.getcwd()
+project_path = ""
 if on_rtd:
+    output = os.environ.get("READTHEDOCS_OUTPUT", None)
+    print(f"READTHEDOCS_OUTPUT : {output}")
     virtenv_path = os.environ.get("READTHEDOCS_VIRTUALENV_PATH", None)
     print(f"$READTHEDOCS_VIRTUALENV_PATH : {virtenv_path}")
+    project_path = os.path.commonprefix([cwd, virtenv_path])
+print(f"Project path: {project_path} /n")
 
+# -- Project information
 project = 'Kuwaiba'
 copyright = '2010-2024, Neotropic SAS'
 author = 'kuwaiba community'
@@ -71,7 +79,7 @@ if on_rtd:
 else:
     res_folder = "../res/"    
 
-cwd = os.getcwd()
+
 print(f"Res Folder: {res_folder}")
 
 def kuwaiba_get_image_filename_for_language(filename, env):
