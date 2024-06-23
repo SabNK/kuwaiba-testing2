@@ -83,7 +83,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
         
     path = sphinx_original_get_image_filename_for_language(filename, env)    
     print(f"kuwaiba initial: {path} ---------- /n")
-    if "res" in initial_path:
+    if "res" in path:
         path = os.path.abspath(os.path.join(root, path[1:]))              
     print(f"kuwaiba path: {path} =========== /n")
     return path
