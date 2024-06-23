@@ -82,7 +82,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     which mirrors the folder structure of the docs repository.
     The returned string should also be absolute so that `os.path.exists` can properly
     resolve it when trying to concatenate with the original doc folder.
-    
+    """
     print(f"filename: {filename} /n")
     print(f"docname: {env.docname} /n")
     r, e = os.path.splitext(filename)
@@ -97,7 +97,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     print(f"kuwaiba initial: {path} ---------- /n")
     if "res" in path:
         abs_path = os.path.abspath(os.path.join(root, path[1:]))
-        path = os.path.relpath(abs_path, cwd)
+        path = SEP + os.path.relpath(abs_path, cwd)
         
     print(f"kuwaiba path: {path} =========== /n")
     return path
@@ -127,7 +127,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
         msg = f'Invalid figure_language_filename: {exc!r}'
         print("ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         raise SphinxError(msg) from exc
-
+    """
 
 sphinx.util.i18n.get_image_filename_for_language = kuwaiba_get_image_filename_for_language
 
