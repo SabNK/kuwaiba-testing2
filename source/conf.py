@@ -105,7 +105,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     print(f"filename: {filename} \n")
     root, ext = os.path.splitext(filename)
     if "res" in root:
-        root = "../.." + root 
+        root = "/../.." + root 
     print(f"root, ext : {root}, {ext} \n")    
     dirname = os.path.dirname(root)
     print(f"dirname : {dirname} \n")
