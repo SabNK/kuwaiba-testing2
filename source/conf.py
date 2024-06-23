@@ -102,12 +102,18 @@ def kuwaiba_get_image_filename_for_language(filename, env):
     print(f"kuwaiba path: {path} =========== /n")
     return path
     """
+    print(f"filename: {filename} \n")
     root, ext = os.path.splitext(filename)
     if "res" in root:
         root = "../.." + root 
+    print(f"root, ext : {root}, {ext} \n")    
     dirname = os.path.dirname(root)
+    print(f"dirname : {dirname} \n")
+    print(f"docname: {env.docname} \n")
     docpath = os.path.dirname(env.docname)
-    
+    print(f"docpath : {docpath} \n")
+    basename1 =os.path.basename(root)
+    print(f"basename : {basename1} \n")
     try:
         return env.config.figure_language_filename.format(
             root=root,
@@ -119,6 +125,7 @@ def kuwaiba_get_image_filename_for_language(filename, env):
         )
     except KeyError as exc:
         msg = f'Invalid figure_language_filename: {exc!r}'
+        print("ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!")
         raise SphinxError(msg) from exc
 
 
