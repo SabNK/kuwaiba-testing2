@@ -33,7 +33,7 @@ Let's start your Kuwaiba journey...
    :hidden:
    :caption: Concepts
 
-   concepts/onthology
+   concepts/ontology
    concepts/telecom   
 
 .. toctree::   
