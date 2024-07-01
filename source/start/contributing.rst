@@ -1,7 +1,7 @@
 Contributing
 ++++++++++++
 
-Kuwaiba is non-profit, open source project, driven by Neotropic with strong community support. That's why we
+Kuwaiba is non-profit, open-source project, driven by Neotropic with strong community support. That's why we
 need as many users as possible to get involved by contributing to the project. There are many ways to contribute,
 so it is possible for everybody to bring something positive to Kuwaiba, regardless of your skills or time availability:
 
