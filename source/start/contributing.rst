@@ -38,7 +38,7 @@ Translation is organized with Weblate_. Typical process is shown on the diagram 
 
 .. kroki:: 
     :caption: Translating BPMN flow
-    :filename: /res/translate.bpmn
+    :filename: /res/start/translate.bpmn
     :type: bpmn
 
 

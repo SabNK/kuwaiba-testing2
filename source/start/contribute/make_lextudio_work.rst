@@ -57,5 +57,5 @@ Now you can use preview button |preview_ico| in VS Code on ``.rst`` files.
 .. _sphinx-copybutton: https://sphinx-copybutton.readthedocs.io/en/latest/
 .. _esBonio: https://github.com/swyddfa/esbonio
 .. _reStructuredText: https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext
-.. |preview_ico| image:: /res/open-preview.svg
+.. |preview_ico| image:: /res/start/contribute/open-preview.svg
 

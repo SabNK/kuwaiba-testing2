@@ -42,11 +42,11 @@ Formatting
 
         .. code-block:: restructuredtext
 
-            .. image:: ../res/login_page.png    
+            .. image:: ../res/start/login_page.png
 
     .. tip:: 
         Do: 
 
         .. code-block:: restructuredtext
 
-            .. image:: /res/login_page.png
+            .. image:: /res/start/login_page.png
